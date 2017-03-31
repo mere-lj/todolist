@@ -1,0 +1,161 @@
+/*Basic Styles*/
+
+body {
+	font-family: Roboto;
+	font-size: 15px;
+
+	background: #c2e59c;
+	background: -webkit-linear-gradient(to left, #c2e59c , #64b3f4);
+	background: linear-gradient(to left, #c2e59c , #64b3f4);
+}
+
+h1 {
+	font-weight: bold;
+}
+
+
+/*Element Styles*/
+
+#todocontainer {
+	width: 50%;
+	min-width: 320px;
+	margin: 100px auto 0;
+	background-color: #f7f7f7;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+}
+
+#todoH1 {
+	color: white;
+	background-color: #2980b9;
+	padding: 10px 20px;
+	text-transform: uppercase; 
+	font-size: 24px;
+}
+
+.todoInput {
+	font-size: 18px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: none;
+	color: #2980b9;
+}
+
+#newtodo {
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 14px 14px 14px 10px;
+	border: 3px solid rgba(0, 0, 0, 0);
+	transition: border 0.1s;
+}
+
+li {
+	background-color: #fff;
+	line-height: 40px;
+	color: #666;
+	padding: 4px 10px;
+	display: none;
+}
+
+li:nth-child(even){
+	background-color: #f7f7f7;
+}
+
+ul li .button {
+	height: 40px;
+	background-color: #e74c3c;
+	text-align: center;
+	color: white;
+	width: 0px;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+ul li .edit {
+	background-color: #2980b9;
+	margin-right: 5px;
+}
+
+.add-remove {
+	float: right;
+}
+
+.logo {
+	display: inline-block;
+	margin: 0.5px;
+	border: 16px solid white;
+	border-top: none; 
+	border-left: transparent solid 8.6px; 
+	border-right: transparent solid 8.6px;
+	transition: transform 1s ease;
+}
+
+
+/*Placeholder Color*/
+
+::-webkit-input-placeholder {color: rgb(180, 180, 180);}
+::-moz-placeholder          {color: rgb(180, 180, 180)}/* Firefox 19+ */
+:-moz-placeholder           {color: rgb(180, 180, 180)}/* Firefox 18- */
+:-ms-input-placeholder      {color: rgb(180, 180, 180)}
+
+
+/*Dynamic Styles*/
+
+.add-remove:hover {
+	cursor: pointer;
+}
+
+li:hover {
+	cursor: default;
+}
+
+li:hover .button {
+	width: 40px;
+	opacity: 1.0;
+}
+
+.keepButton {
+	width: 40px !important;
+	opacity: 1.0 !important;
+	float: right;
+}
+
+.hideButton {
+	width: 0 !important;
+	opacity: 0 !important;
+	transition: none;
+}
+
+.crossout {
+	color: grey;
+	text-decoration: line-through;
+}
+
+#newtodo:hover, #newtodo:focus {
+	background-color: white;
+	outline: none;
+	border: 3px solid #2980b9;
+}
+
+.todoInput:focus {
+	outline: none;
+}
+
+
+/*Media Queries*/
+
+
+
+/*mobile devices landscape/portrait mode*/
+	@-ms-viewport {
+	    width: device-width;
+	}
+
+	@viewport {
+	    width: device-width;
+	}
+
+
+/*TESTING GROUND*/
+
